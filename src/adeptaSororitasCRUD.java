@@ -13,6 +13,10 @@ public class adeptaSororitasCRUD {
             Connection conn = db.connect();
 
             PreparedStatement ps = conn.prepareStatement(sql);
+            ps.setInt(1, aS.getCod());
+            ps.setString(2, aS.getNome());
+            ps.setInt(3, aS.getPuntos());
+
 
 
         } catch (SQLException e) {
